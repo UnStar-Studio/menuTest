@@ -1,0 +1,69 @@
+<!--Нижнее меню-->
+<html>
+    <head>
+        <style>
+            .body,html{
+                background-color:cornsilk;
+                display:flex;
+                justify-content:center;
+            }
+            .menu {
+                position: absolute;
+                position:fixed;
+                left: 0;
+                bottom: 0;
+                top: 1350px;
+                width: 100%;
+                background-color: lightgrey;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                transition: 0.3s;
+            }
+                .menu:hover {
+                    top: 1225px;
+                }
+            .btn {
+                position: relative;
+                bottom:0;
+                margin: 15px;
+                box-sizing: border-box;
+                background-color: aliceblue;
+                width: 30%;
+                height: 150px;
+                border-radius: 25px;
+                transition: 0.5s;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+            }
+                .btn:hover {
+                    background-color:blanchedalmond;
+                    height:125px;
+                }
+            .btnText {
+                font-size: 50px;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <main>
+                <div class="menu">
+                    <div class="btn">
+                        <p class="btnText">Главная</p>
+                    </div>
+                    <div class="btn">
+                        <p class="btnText">О нас</p>
+                    </div>
+                    <div class="btn">
+                        <p class="btnText">Настройки</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
